@@ -6,6 +6,20 @@
     <title>Hello World</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <h1>ESH Search Engine</h1>
+
+<!-- Widget JavaScript bundle -->
+<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+<!-- Search widget element is not visible by default -->
+<gen-search-widget
+  configId="41b15c97-75b2-45d6-b18a-78e07afc0d88"
+  location="us"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+
+<!-- Element that opens the widget on click. It does not have to be an input -->
+<input placeholder="Search here" id="searchWidgetTrigger" />
+    
 </body>
 </html>
